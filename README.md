@@ -76,16 +76,7 @@ while True:
     except KeyError:
         c.send("Not found".encode())
 ```
-## server
-```
-import socket
-s=socket.socket()
-s.connect(('localhost',9000))
-while True:
-    ip=input("Enter mac address: ")
-    s.send(ip.encode())
-    print("Logical address",s.recv(1024).decode())
-```
+
 ## OUPUT -RARP
 ![image](https://github.com/prathyusharavi/2c.ARP_RARP_PROTOCOLS/assets/147474424/401787f7-d53c-4695-9c33-94278aee0fa0)
 
